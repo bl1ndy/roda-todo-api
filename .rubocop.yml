@@ -31,12 +31,15 @@ Style/StringHashKeys:
     - spec/**/*
     - config.ru
 
+Style/Documentation:
+  Enabled: false
+
 RSpec/NestedGroups:
   Max: 5
 
 Layout/LineLength:
   Max: 125
-  AllowedPatterns: ['(\A|\s)#']
+  IgnoredPatterns: ['(\A|\s)#']
 
 Layout/SpaceBeforeBrackets:
   Exclude:
