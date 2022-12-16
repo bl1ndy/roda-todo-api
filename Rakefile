@@ -11,7 +11,7 @@ migrate =
   lambda do |version|
     Sequel.extension(:migration)
 
-    Sequel::Migrator.apply(Application['database'], 'db/migrate', nil)
+    Sequel::Migrator.apply(Application['database'], 'db/migrate', version)
 
     Rake::Task['db:dump'].invoke
   end
